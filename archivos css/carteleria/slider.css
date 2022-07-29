@@ -1,0 +1,134 @@
+.slider{
+    
+    background: url(https://p4.wallpaperbetter.com/wallpaper/624/316/6/minimalism-pattern-monochrome-bricks-walls-wallpaper-preview.jpg);
+
+}
+
+.slider .slider-wrapper{
+
+    display: flex;
+    width: 400vw;
+    transition: all 1s ease-in-out;
+
+}
+
+.slider .slider-wrapper .slider-item{
+
+    width: 100vw;
+
+}
+
+.slider .slider-wrapper .slider-item .slider-img{
+
+    width: 50vw;
+    z-index: 1;
+}
+
+.slider .slider-item{
+
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.slider .slider-item .slider-bg{
+
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    position: absolute;
+
+}
+
+.slider .slider-item .slider-title{
+
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    color:var(--color-amarillo);
+    z-index: 1;
+
+}
+
+.slider .slider-item .slider-price{
+
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    color:var(--color-blanco);
+    border: 1px solid var(--color-gris);
+    z-index: 1;
+
+}
+
+.slider .slider-item .buy-button{
+
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 2rem;
+    font-weight: 900;
+    color:var(--color-blanco);
+    border: 1px solid var(--color-gris);
+    z-index: 1;
+    cursor: pointer;
+    background-color: var(--color-negro);
+
+}
+
+.slider .slider-item .buy-button:hover{
+
+    background-color: var(--color-blanco);
+    color:var(--color-negro);
+
+}
+
+.slider .slider-item:nth-child(1) .slider-bg{
+
+    background-color: var(--color-rojo);
+
+}
+
+.slider .slider-item:nth-child(2) .slider-bg{
+
+    background-color: var(--color-violeta);
+
+}
+
+
+.slider .slider-item:nth-child(4) .slider-bg{
+
+    background-color: var(--color-amarillo);
+
+}
+
+.slider .slider-item:nth-child(1) .slider-price{
+
+    color: var(--color-rojo);
+
+}
+
+.slider .slider-item:nth-child(2) .slider-price{
+
+    color: var(--color-violeta);
+
+}
+.slider .slider-item:nth-child(3) .slider-price{
+
+    color: var(--color-verde);
+
+}
+.slider .slider-item:nth-child(4) .slider-price{
+
+    color: var(--color-amarillo);
+
+}

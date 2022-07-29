@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="archivos css/reset.css">
+    <link rel="stylesheet" href="archivos css/normalize.css">
+    <link rel="stylesheet" href="archivos css/variables.css">
+    <link rel="stylesheet" href="archivos css/e-commerce/e-commerce.css">
+    <link rel="stylesheet" href="archivos css/e-commerce/header.css">
+    <link rel="stylesheet" href="archivos css/e-commerce/product.css">
+    <link rel="stylesheet" href="archivos css/carteleria/footer.css">
+    <link rel="stylesheet" href="archivos css/carteleria/payment.css">
+    <link rel="stylesheet" href="archivos css/responsive.css">
+    <link rel="stylesheet" href="archivos js/carteleria-search.js">
+
+
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="background">
+
+        <div class="nav container">
+
+            <img src="imagenes/punto i logo.png" alt="carteleria-logo" class="logo">
+            
+            <div class="search-div">
+
+                <img class="search-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUJJREFUSEu9le0xBEEURc9GQAhEgAzIgAjIABmQARmQgQwQARnYEIiAOlWv1avR3TO7NWOq9sdOd9/z+r6PWbHws1pYnx5gD7gEjoHDCOQdeAHugfWU4FqAuxDvabjnegxSAxjlQRx8BBTynY83uQLO042OepAhoET+FdYU4aGGIK3aCbuEVp8M0POP2GVULfEiJOQt/uy3cpIBJXoT2IxoEOZD2NU8kwHF+ynRD2/h2WouMuA7Tm3aG91zcwEsit1aluey6DWq7g/jX5O8bZlqjyVbHR2tRvsETjq9oOBz+H4L3ExptLInjwrr3BrPo8IBeJEEXTMYg+rmIC+ODTttcc9pzK0mZGxc29GOa4efogr5U1zPLU1nkutVyKZNVXOhC5kDIDRDzoCnEslcgALRzl9xX84JGP0e9D5MW68tfoMfCXxMGRHr0pcAAAAASUVORK5CYII="/>
+                <input type="search" class="search" id="search" onkeyup="search()" placeholder="Buscar productos">
+
+            </div>
+            
+            <img onmouseover="showCart(this)" class="cart" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAR5JREFUSEvN1cExBUEUheHvRYAMiAARIAIywJYFIkAEbNgiAmRABIgAESAC6qqeV2PevOmuGqOczSz6zv379JnbMzKwRgP396eAz+TmHZc4+A13dQcVoOq7hru+kLYj2scJbrExBGAWb6nxAl76QKaFHBls9mj8iOV4fxpgCQ89AK+Y7wLEWuxiEdvpqyrhVc6PcZQDbOEigb7tZhTZPSOe4+xygxYzMZPOMxx1qdrQPVarwhzgFHu4QjToUszMSvNIc4AIKmyH5hCO2lTVfaRwx3U5QDS7wXq6OsJRmyLQwzanJYCY5utcwml94nopAdQ/2S7OE2J+fqgUUGhgsqwUcIYdnGO30aZrrfiHU7/Km5vqWisGDO5g8Az+L+ALYZk0GaU3ojwAAAAASUVORK5CYII=" alt="carrito">
+
+            <button class="product-button">Compra Ahora!</button>
+
+            <div class="payment">
+
+                <h1 class="pay-title">Información Personal</h1>
+                <label for="">Nombre y Apellido</label>
+                <input type="text" class="pay-input" placeholder="Juan Perez">
+                <label for="">Teléfono</label>
+                <input type="text" class="pay-input" placeholder="+54 342 5467076">
+                <label for="">Dirección</label>
+                <input type="text" class="pay-input" placeholder="Crespo 3132">
+                <h1 class="pay-title">Tarjeta de Crédito</h1>
+                <div class="card-icons">
+        
+                    <img src="imagenes/visa.png" alt="visa" width="52" class="card-icon">
+                    <img src="imagenes/mastercard.png" alt="mastercard" width="70" class="card-icon">
+                
+                </div>
+                <input type="password" class="pay-input" placeholder="Número de Tarjeta">
+                <div class="card-info">
+        
+                    <input type="text" class="pay input sm" placeholder="mm">
+                    <input type="text" class="pay input sm" placeholder="yyyy">
+                    <input type="text" class="pay input sm" placeholder="cvv">
+        
+                </div>
+        
+                <button class="pay-button">Verificar</button>
+                <span class="close">X</span>
+        
+        
+            </div>
+
+
+        </div>
+
+        <div class="cart-products" id="products-id" style="background-color:white; z-index:100;">
+            
+            <p class="close-btn" id= 'close-x' onclick="closeBtn()">X</p>
+            
+            <h3>Mi carrito</h3>
+            
+            <div class="card-items">
+
+            </div>  
+     
+        </div>
+
+    </div>
+    
+    </header>
+
+
+
+    <section class="products" id="product-list">
+
+        <div class="shop-content">
+    
+            <div class="cart-items"> </div>
+    
+            <div class="most-sold">
+    
+                <h3>Los más vendidos</h3>
+    
+                <div class="product-box" data-name="p-1">
+    
+                    <div>
+                         <img src="imagenes/Sierra-circular.png" alt="Sierra" class="product-img">
+                         <h2 class="product-title">Sierra Circular</h2>
+                    </div>
+                    <span class="price">$12.000</span>
+                    <a href="#" class="add-cart" data-id="8" >Añadir</a>
+                </div>
+                
+                <div class="product-box" data-name="p-5">
+    
+                    <div>
+                        <img src="imagenes/set-juego-de-herramientas.png" alt="Herramientas" class="product-img">
+                        <h2 class="product-title">Set Juego De Herramientas</h2>
+                    </div>
+                    <span class="price">$12.000</span>
+                    <a href="#" class="add-cart" data-id="5" >Añadir</a>
+                </div>
+    
+                <div class="product-box" data-name="p-9">
+    
+                    <div>
+                        <img src="imagenes/taladro-2.png" alt="Taladro" class="product-img">
+                        <h2 class="product-title">Taladro 10mm</h2>
+                    </div>
+                    <span class="price">$13.000</span>
+                    <a href="#" class="add-cart" data-id="2" >Añadir</a>
+                </div>
+            
+            </div>
+    
+            <div class="most-efficient">
+    
+                <h2>Los más eficientes</h2>
+    
+                <div class="product-box" data-name="p-2">
+    
+                    <div>
+                        <img src="imagenes/cepillo-electrico.png" alt="Cepillo" class="product-img">
+                        <h2 class="product-title">Cepillo Eléctrico</h2>
+                    </div>
+                    <span class="price">$25.000</span>
+                    <a href="#" class="add-cart" data-id="6" >Añadir</a>
+                </div>
+    
+                <div class="product-box" data-name="p-6">
+    
+                    <div>
+                        <img src="imagenes/cortadora-porcelanato.png" alt="Cortadora" class="product-img">
+                        <h2 class="product-title">Cortadora Porcelanato</h2>
+                    </div>
+                    <span class="price">$20.000</span>
+                    <a href="#" class="add-cart" data-id="7" >Añadir</a>
+                </div>
+    
+                <div class="product-box" data-name="p-10">
+    
+                    <div>
+                        <img src="imagenes/soldadora.png" alt="Soldadora" class="product-img">
+                        <h2 class="product-title">Soldadora</h2>
+                    </div>
+                    <span class="price">$20.000</span>
+                    <a href="#" class="add-cart" data-id="10" >Añadir</a>
+                </div>
+            
+            </div>
+    
+            <div class="most-cheap">
+    
+                <h2>Los más económicos</h2>
+    
+                <div class="product-box" data-name="p-3">
+    
+                    <div>
+                        <img src="imagenes/amoladora.png" alt="Amoladora" class="product-img">
+                        <h2 class="product-title">Amoladora Angular</h2>
+                    </div>
+                    <span class="price">$9.999</span>
+                    <a href="#" class="add-cart" data-id="3" >Añadir</a>
+    
+                </div>
+    
+                <div class="product-box" data-name="p-7">
+    
+    
+                    <div>
+                        <img src="imagenes/lijadora-orbital.png" alt="Lijadora" class="product-img">
+                        <h2 class="product-title">Lijadora Orbital</h2>
+                    </div>
+                    <span class="price">$9.999</span>
+                    <a href="#" class="add-cart" data-id="9" >Añadir</a>
+               
+                </div>
+    
+                <div class="product-box" data-name="p-11">
+                    
+    
+                    <div>
+                        <img src="imagenes/dobladora-de-estribos.png" alt="Dobladora" class="product-img">
+                        <h2 class="product-title">Dobladora de Estribos</h2>
+                    </div>
+                    <span class="price">$9.999</span>
+                    <a href="#" class="add-cart" data-id="11" >Añadir</a>
+                    
+                </div>
+    
+            </div>
+    
+                
+                   
+            <div class="import">
+    
+                <h2>Productos importados</h2>
+    
+                <div class="product-box" data-name="p-4">
+    
+                    <div>
+                         <img src="imagenes/taladro.png" alt="Taladro" class="product-img">
+                         <h2 class="product-title">Taladro 13mm</h2>
+                     </div>
+                    <span class="price">$15.000</span>
+                    <a href="#" class="add-cart" data-id="1" >Añadir</a>
+                </div>
+        
+                <div class="product-box" data-name="p-8">
+        
+                    <div>
+                        <img src="imagenes/Grasera Manual.png" alt="Grasera" class="product-img">
+                        <h2 class="product-title">Grasera Manual</h2>
+                    </div>  
+                    <span class="price">$13.000</span>
+                    <a href="#" class="add-cart" data-id="4" >Añadir</a>
+                </div>
+        
+                <div class="product-box" data-name="p-12">
+        
+                    <div>
+                        <img src="imagenes/hidrolavadora.png" alt="hidrolavadora" class="product-img">
+                        <h2 class="product-title">Hidrolavadora</h2>
+                    </div>
+                    <span class="price">$15.000</span>
+                    <a href="#" class="add-cart" data-id="12" >Añadir</a>
+                </div>
+            
+            </div>
+       
+        </div>
+    
+    </section>
+    <footer>
+
+        <div class="footer-left">
+    
+            <div class="footer-menu">
+    
+                <h1 class="footer-menu-title">Sobre Nosotros</h1>
+                <ul class="menu-list">
+    
+                    <li class="menu-list-item">Empresa</li>
+                    <li class="menu-list-item">Contacto</li>
+                    <li class="menu-list-item">Carrera</li>
+                    <li class="menu-list-item">Tienda</li>
+    
+                </ul>
+    
+            </div>
+    
+            <div class="footer-menu">
+    
+                <h1 class="footer-menu-title">Enlaces</h1>
+                <ul class="menu-list">
+    
+                    <li class="menu-list-item">Soporte</li>
+                    <li class="menu-list-item">Reembolso</li>
+                    <li class="menu-list-item">Feedback</li>
+                    <li class="menu-list-item">Historia</li>
+    
+                </ul>
+    
+            </div>
+    
+            <div class="footer-menu">
+    
+                <h1 class="footer-menu-title">Productos</h1>
+                
+                <ul class="menu-list">
+    
+                    <li class="menu-list-item">Vinilos</li>
+                    <li class="menu-list-item">Lonas</li>
+                    <li class="menu-list-item">Acrilicos</li>
+                    <li class="menu-list-item">Polyfan</li>
+    
+                </ul>
+    
+            </div>
+        </div>
+    
+        <div class="footer-right">
+            
+            <div class="footer-right-menu">
+    
+                <h1 class="footer-menu-title">Suscríbete para conocer más noticias!!!</h1>
+                <div class="f-mail">
+    
+                    <input type="text" class="f-input" placeholder="tu@email.com">
+                    <button class="f-button">Registrese!!!</button>
+    
+                </div>
+    
+            </div>
+    
+            <div class="footer-right-menu">
+    
+                <h1 class="footer-menu-title">Siguenos para saber más!!!</h1>
+                <div class="f-icons">
+    
+                    <img src="imagenes/facebook-icono.png" alt="facebook" class="f-icon">
+                    <img src="imagenes/email-icono.png" alt="email" class="f-icon">
+                    <img src="imagenes/whatsapp-icono.png" alt="Whatsapp" class="f-icon">
+                    <img src="imagenes/instagram-icono.png" alt="instagram" class="f-icon">
+    
+                </div>
+    
+            </div>
+    
+            <div class="footer-right-menu">
+    
+                <span class="copyright">@Punto i S.R.L. Todos los derechos reservados. 2022.</span>
+    
+            </div>
+    
+        </div>
+ 
+    </footer>
+
+    
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    
+    <script src="archivos js\carteleria-search.js"></script>
+    <script src='archivos js\e-commerce.js'></script>
+    <script src='archivos js\carteleria.js'></script>
+
+</body>
+
+</html>

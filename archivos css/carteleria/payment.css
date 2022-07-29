@@ -1,0 +1,109 @@
+.payment{
+
+    width: 500px;
+    height: 500px;
+    background-color: var(--color-blanco);
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 1rem;
+    display: none;
+    flex-direction: column;
+    box-shadow: 1px 2px 33px 1px rgba(0,0,0,0.73);
+-webkit-box-shadow: 1px 2px 33px 1px rgba(0,0,0,0.73);
+-moz-box-shadow: 1px 2px 33px 1px rgba(0,0,0,0.73);
+    z-index: 1;
+}
+
+.pay-title{
+
+    font-size: 20px;
+    color:var(--color-gris-oscuro);
+
+}
+
+label{
+
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+.pay-input{
+
+    padding: .65rem;
+    margin: 1rem;
+    border: none;
+    border-bottom: 1px solid var(--color-gris);
+
+}
+
+.pay-input::placeholder{
+
+    color:var(--color-gris-claro);
+
+}
+
+.card-icons{
+
+    display: flex;
+    
+
+}
+
+.card-icons{
+
+    margin-right: 10px;;
+    
+
+}
+
+.card-info{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sm{
+
+    width: 30%;
+
+}
+
+.pay-button{
+
+    position: absolute;
+    height: 40px;
+    bottom: -40px;
+    width: 100%;
+    left: 0;
+    box-shadow: 1px 2px 33px 1px rgba(0,0,0,0.73);
+    -webkit-box-shadow: 1px 2px 33px 1px rgba(0,0,0,0.73);
+    -moz-box-shadow: 1px 2px 33px 1px rgba(0,0,0,0.73);
+    background-color: var(--color-verde);
+    color:var(--color-blanco);
+    border: none;
+    cursor: pointer;    
+
+}
+
+.close{
+
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: var(--color-gris-oscuro);
+    color:var(--color-blanco);
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+
+}
