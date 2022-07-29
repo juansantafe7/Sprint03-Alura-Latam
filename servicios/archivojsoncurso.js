@@ -33,7 +33,7 @@ const crearNuevaLinea = (name, imageUrl, price, description) => {
   listaClientes()
     .then((data) => {
       data.forEach((perfil) => {
-        const nuevaLinea = crearNuevaLinea(perfil.nombre, perfil.email);
+        const nuevaLinea = crearNuevaLinea(perfil.name, perfil.imageUrl, perfil.price, perfil.description);
         table.appendChild(nuevaLinea);
       });
     })
