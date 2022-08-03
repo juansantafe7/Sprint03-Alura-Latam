@@ -1,0 +1,226 @@
+.products{
+
+    background: url(https://fondosmil.com/fondo/6485.jpg);
+
+}
+
+.shop-content{
+
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+.shop-content .product-img{
+
+    width: 20vw;
+    height: 40vh;
+    margin-bottom: .5rem;
+
+}
+
+.product-box{
+
+    position: relative;
+    padding: 5px;
+
+}
+
+
+.product-title{
+
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    text-align: center;
+
+}
+
+.price{
+
+    font-weight: 500;
+
+}
+
+
+.add-cart{
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--color-gris-oscuro);
+    color: var(--color-blanco);
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.add-cart:hover{
+
+    background: var(--color-violeta-fuerte);
+
+}
+
+.product-box:hover{
+
+    padding: 7px;
+
+}
+
+.most-sold .product-box{
+
+    border: 3px solid var(--color-violeta-fuerte);
+
+}
+
+.most-sold h3{
+
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: .5rem;
+    color: var(--color-violeta-fuerte);
+
+}
+
+.most-sold h2{
+
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: .5rem;
+    color: var(--color-violeta-fuerte);
+
+}
+
+.most-sold .price{
+
+    color: var(--color-violeta-fuerte);
+    font-weight: 700;
+
+}
+
+.most-efficient .product-box{
+
+    border: 3px solid var(--color-rojo);
+
+}
+
+.most-efficient h3{
+
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: .5rem;
+    color: var(--color-rojo);
+
+}
+
+.most-efficient h2{
+
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: .5rem;
+    color: var(--color-rojo);
+
+}
+
+.most-efficient .price{
+
+    color: var(--color-rojo);
+    font-weight: 700;
+
+}
+
+.most-efficient .add-cart:hover{
+
+    background: var(--color-rojo);
+
+}
+
+
+.most-cheap .product-box{
+
+    border: 3px solid var(--color-azul);
+
+}
+
+.most-cheap h3{
+
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: .5rem;
+    color: var(--color-azul);
+
+}
+
+.most-cheap h2{
+
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: .5rem;
+    color: var(--color-azul);
+
+}
+
+.most-cheap .price{
+
+    color: var(--color-azul);
+    font-weight: 700;
+
+}
+
+.most-cheap .add-cart:hover{
+
+    background: var(--color-azul);
+
+}
+
+
+
+.import .product-box{
+
+    border: 3px solid var(--color-naranja);
+
+}
+
+.import h3{
+
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: .5rem;
+    color: var(--color-naranja);
+
+}
+
+.import h2{
+
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: .5rem;
+    color: var(--color-naranja);
+
+}
+
+.import .price{
+
+    color: var(--color-naranja);
+    font-weight: 700;
+
+}
+
+.import .add-cart:hover{
+
+    background: var(--color-naranja);
+
+}

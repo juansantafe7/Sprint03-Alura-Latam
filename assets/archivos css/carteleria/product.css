@@ -1,0 +1,169 @@
+.product{
+    background: url(https://www.wallpaperuse.com/wallp/1-18594_m.jpg);
+    height: 100vh;
+    background-color: var(--color-blanco2);
+    position: relative;
+
+}
+
+.product .product-img{
+
+    width: 50%;
+
+}
+
+.product .product-details{
+
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 1rem;
+
+}
+
+.product .product-title{
+
+    font-size: 75px;
+    font-weight: 900;
+    text-align: center;
+
+}
+
+.product .product-price{
+
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.product .product-description{
+
+    font-size: 24px;
+    color: var(--color-azul);
+    font-weight: 600;
+    line-height: 2rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+.colors, .sizes{
+
+    display: flex;
+    margin-bottom: 1rem;
+
+}
+
+.color{
+
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: var(--color-amarillo);
+    padding: .5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+
+}
+
+.color:nth-child(2){
+
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: var(--color-azul);
+    margin-right: 1rem;
+    cursor: pointer;
+
+}
+
+.color:nth-child(3){
+
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: var(--color-negro);
+    margin-right: 1rem;
+    cursor: pointer;
+
+}
+
+.color:nth-child(4){
+
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: var(--color-rojo);
+    margin-right: 1rem;
+    cursor: pointer;
+
+}
+.color:nth-child(5){
+
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: var(--color-verde);
+    margin-right: 1rem;
+    cursor: pointer;
+
+}
+
+.size{
+
+    padding: 1rem;
+    border:1px solid var(--color-negro);
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.product-button{
+
+    float: right;
+    padding: 10px 20px;
+    background-color: var(--color-negro);
+    color:var(--color-blanco2);
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.product-button:hover{
+
+    background-color: var(--color-blanco2);
+    color: var(--color-negro);
+
+}
+
+.add-product{
+
+    display: flex;
+    padding: 10px 15px;
+    background-color: var(--color-negro);
+    color:var(--color-blanco2);
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.add-product:hover a{
+
+    background-color: var(--color-blanco2);
+    color: var(--color-negro);
+
+}
+
+.add-product a{
+
+    text-decoration: none;
+    color: var(--color-blanco);
+    font-weight: 600;
+    padding: 10px 15px;
+    
+
+}
