@@ -30,6 +30,6 @@ Es muy importante que el sitio sea adaptable para que los clientes puedan compra
 Las credenciales para loguearse en la administración son: usuario: Fabio password: fabio
 
 💻 Lenguajes
-HtmlCssJs
+![image](https://user-images.githubusercontent.com/92988456/182678851-29fb7962-7bbf-4371-ae0b-4ddebf38dc08.png)
 
 
